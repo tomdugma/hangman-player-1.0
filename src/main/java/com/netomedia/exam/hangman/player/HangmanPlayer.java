@@ -55,7 +55,7 @@ public class HangmanPlayer {
     }
 
     public static List<String> readDictionary(String path) throws IOException {
-        BufferedReader br = new BufferedReader( new FileReader ("C:\\Users\\User\\Downloads\\hangman-player-1.0\\hangman-player-1.0\\src\\main\\resources\\dictionary.txt"));
+        BufferedReader br = new BufferedReader( new FileReader (path));
         String line = "";
         List<String> words = new ArrayList<>();
         while ((line = br.readLine()) != null) {
